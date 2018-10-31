@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using MPACore.PhoneBook.PhoneBooks.PhoneNumber.Dto;
 
 namespace MPACore.PhoneBook.PhoneBooks.Dtos
 {
@@ -29,5 +30,7 @@ namespace MPACore.PhoneBook.PhoneBooks.Dtos
         /// </summary>
         [MaxLength(200)]
         public string Address { get; set; }
+
+        public List<PhoneNumberEditDto> PhoneNumbers { get; set; }
     }
 }

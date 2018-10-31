@@ -8,7 +8,7 @@ using System.Text;
 
 namespace MPACore.PhoneBook.PhoneBooks.PhoneNumbers
 {
-    public class PhoneNumber : Entity<long>, IHasCreationTime
+    public class PhoneNumber: Entity<long>, IHasCreationTime
     {
         /// <summary>
         /// 电话号码
@@ -19,12 +19,12 @@ namespace MPACore.PhoneBook.PhoneBooks.PhoneNumbers
         /// <summary>
         /// 类型
         /// </summary>
-        public PhoneNumber Type { get; set; }
+        public PhoneNumberType Type { get; set; }
 
         public int Personid { get; set; }
 
         public Person Person { get; set; }
 
-        public DateTime CreationTime { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public DateTime CreationTime { get;set; }
     }
 }
