@@ -33,7 +33,7 @@ namespace MPACore.PhoneBook.PhoneBooks.Persons
         /// <summary>
         /// 电话号码的属性
         /// </summary>
-        public ICollection<PhoneNumberType> PhoneNumbers { get; set; }
+        public ICollection<PhoneNumber> PhoneNumbers { get; set; }
 
     }
 }

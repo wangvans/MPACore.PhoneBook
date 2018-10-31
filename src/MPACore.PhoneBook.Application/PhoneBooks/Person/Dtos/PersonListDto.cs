@@ -4,6 +4,7 @@ using MPACore.PhoneBook.PhoneBooks.Persons;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using MPACore.PhoneBook.PhoneBooks.PhoneNumber.Dto;
 
 namespace MPACore.PhoneBook.PhoneBooks.Dtos
 {
@@ -22,5 +23,7 @@ namespace MPACore.PhoneBook.PhoneBooks.Dtos
         /// 地址信息
         /// </summary>
         public string Address { get; set; }
+
+        public  List<PhoneNumberListDto> PhoneNumbers { get; set; }
     }
 }
